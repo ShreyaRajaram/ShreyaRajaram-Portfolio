@@ -198,6 +198,48 @@ h3 { font-size: 1.5rem; }
   transition: none;
 }
 
+.sticker[data-zoom] { cursor: zoom-in; }
+
+/* click-to-zoom close-up */
+.zoom {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgb(8 16 40 / .82);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .25s ease, visibility .25s;
+  cursor: zoom-out;
+}
+.zoom.is-open { opacity: 1; visibility: visible; }
+.zoom img {
+  max-height: 92vh;
+  max-width: min(92vw, 520px);
+  width: auto;
+  filter: drop-shadow(0 20px 30px rgb(0 0 0 / .55));
+  scale: .85;
+  rotate: 3deg;
+  transition: scale .3s ease, rotate .3s ease;
+}
+.zoom.is-open img { scale: 1; rotate: 0deg; }
+.zoom__close {
+  position: absolute;
+  top: 18px; right: 22px;
+  width: 44px; height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--paper);
+  color: var(--navy);
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+
 /* ---------- about / postcard ---------- */
 .postcard {
   display: grid;
@@ -415,6 +457,22 @@ h3 { font-size: 1.5rem; }
   transition: background-size .25s;
 }
 .contact__links a:hover { background-size: 100% 35%; }
+.icon-box { /* rounded-square badge, LinkedIn-logo style */
+  display: inline-grid;
+  place-items: center;
+  width: 1.05em;
+  height: 1.05em;
+  margin-right: .35em;
+  border-radius: .22em;
+  background: var(--navy);
+  color: var(--paper);
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: .8em;
+  line-height: 1;
+  vertical-align: .08em;
+  padding-bottom: .05em;
+}
 
 .footer {
   text-align: center;
