@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Caveat:wght@500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=8" />
+  <link rel="stylesheet" href="css/style.css?v=11" />
 </head>
 <body>
   <div class="tiles" aria-hidden="true"></div>
@@ -31,7 +31,7 @@
       <div class="paper hero__card">
         <p class="hand">hi, i'm</p>
         <h1>Shreya<br /><em>Rajaram</em></h1>
-        <p class="hero__tag">Computer Engineering @ University of Florida &middot; software engineer &amp; product manager &middot; building with AI</p>
+        <p class="hero__tag">Computer Engineering &amp; Philosophy @ University of Florida.<br />Product-minded engineering in hardware and software.</p>
         <div class="hero__cta">
           <a class="btn" href="#projects">See my work</a>
           <a class="btn btn--ghost" href="#resume">Resume</a>
@@ -41,7 +41,6 @@
 
       <img class="sticker" src="assets/stickers/camera.webp?v=3" alt="Photo of Shreya on a digital camera screen" style="--x:1%;  --y:10%; --w:290px; --r:-7deg" />
       <img class="sticker" src="assets/stickers/ball2.webp" alt="" style="--x:82%; --y:10%; --w:140px; --r:9deg" />
-      <img class="sticker" src="assets/stickers/vinyl.webp" alt="" style="--x:80%; --y:60%; --w:170px; --r:0deg" />
       <img class="sticker" src="assets/stickers/sun.webp" alt="" style="--x:6%;  --y:60%; --w:150px; --r:-10deg" />
       <img class="sticker" src="assets/stickers/star_blue.webp" alt="" style="--x:66%; --y:9%;  --w:70px;  --r:-12deg" />
       <img class="sticker" src="assets/stickers/star_blue.webp" alt="" data-hide-mobile style="--x:26%; --y:80%; --w:50px;  --r:18deg" />
@@ -87,22 +86,34 @@
       </h2>
       <div class="grid">
         <!-- Copy one <article class="stamp"> block per project -->
+        <article class="stamp" style="--tilt:1deg; --accent:var(--pink)">
+          <div class="stamp__inner">
+            <span class="stamp__no">No. 01 · 2026</span>
+            <h3>AI Air-Writing Smart Pen</h3>
+            <p>
+              A $25 pen that writes in the air: an MPU6050 gyroscope on an ESP32-S3 streams smooth <strong>100 Hz</strong>
+              ink. A multimodal Gemini tutor explains circled slides, documents and sketches with hints, not answers,
+              and annotated copies export to <strong>9 file types</strong>.
+            </p>
+            <ul class="tags"><li>JavaScript</li><li>Node.js</li><li>Gemini API</li><li>ESP32</li></ul>
+          </div>
+        </article>
         <article class="stamp" style="--tilt:-1.5deg; --accent:var(--cobalt)">
           <div class="stamp__inner">
-            <span class="stamp__no">No. 01 · 2026–now</span>
+            <span class="stamp__no">No. 02 · 2026–now</span>
             <h3>Train of Four Monitor</h3>
             <p>
-              A mobile app for Train of Four (TOF) neuromuscular monitoring, built as an alternative to $10,000+
-              hardware. On-device MediaPipe hand tracking runs at <strong>60 FPS</strong> on Android, and micro-twitch
-              detection reaches <strong>90% TOF-ratio accuracy</strong> across 400+ clinical videos. We're working
-              toward IRB-approved clinical trials with UF Health.
+              An auto-calibrating Train of Four (TOF) twitch counter that measures nerve block from a phone camera.
+              MediaPipe and OpenCV optical flow run on-device at <strong>30 FPS</strong> with no raw video stored, and
+              <strong>91%</strong> of TOF ratios land within 10 points across 630 simulated videos. We're working toward
+              IRB-approved clinical trials with UF Health Shands.
             </p>
-            <ul class="tags"><li>Android</li><li>MediaPipe</li><li>Unity</li><li>Figma</li></ul>
+            <ul class="tags"><li>Python</li><li>MediaPipe</li><li>OpenCV</li><li>Unity</li></ul>
           </div>
         </article>
         <article class="stamp" style="--tilt:1.2deg; --accent:var(--green)">
           <div class="stamp__inner">
-            <span class="stamp__no">No. 02 · 2025–now</span>
+            <span class="stamp__no">No. 03 · 2025–now</span>
             <h3>ChompCourse</h3>
             <p>
               A mobile academic planner that generates multi-semester degree plans. A Flask REST API topologically
@@ -115,19 +126,20 @@
         </article>
         <article class="stamp" style="--tilt:-0.8deg; --accent:var(--navy)">
           <div class="stamp__inner">
-            <span class="stamp__no">No. 03 · 2025–now</span>
+            <span class="stamp__no">No. 04 · 2025</span>
             <h3>ThinkBuy</h3>
             <p>
-              A Chrome extension that blocks impulse purchases on <strong>10+ e-commerce sites</strong> by parsing the
-              page DOM. A full-stack auth system on PostgreSQL powers per-user spending analytics dashboards.
+              A Chrome extension that blocks impulse buys on <strong>10+ e-commerce sites</strong> with real-time DOM
+              parsing and MutationObserver. A full-stack user system on Supabase Postgres and auth powers per-user
+              spending dashboards.
             </p>
-            <ul class="tags"><li>JavaScript</li><li>Chrome Extension</li><li>PostgreSQL</li></ul>
+            <ul class="tags"><li>JavaScript</li><li>Supabase</li><li>PostgreSQL</li></ul>
             <div class="links"><a href="https://github.com/ShreyaRajaram" target="_blank" rel="noopener">GitHub ↗</a></div>
           </div>
         </article>
         <article class="stamp" style="--tilt:1.6deg; --accent:var(--sage-dark)">
           <div class="stamp__inner">
-            <span class="stamp__no">No. 04 · 2026–now</span>
+            <span class="stamp__no">No. 05 · 2026–now</span>
             <h3>Algal Bloom Risk Classifier</h3>
             <p>
               Classifies harmful algal bloom risk from water, weather and satellite data for Biointerphase, a biotech
@@ -136,9 +148,9 @@
             <ul class="tags"><li>Python</li><li>ML</li><li>Remote sensing</li></ul>
           </div>
         </article>
-        <article class="stamp" style="--tilt:-1.1deg; --accent:var(--pink)">
+        <article class="stamp" style="--tilt:-1.1deg; --accent:var(--green)">
           <div class="stamp__inner">
-            <span class="stamp__no">No. 05 · 2025–26</span>
+            <span class="stamp__no">No. 06 · 2025–now</span>
             <h3>Theta Tau Website</h3>
             <p>
               A full-stack redesign of the chapter website. I led a <strong>3-person Scrum team</strong> on two-week
@@ -150,7 +162,7 @@
       </div>
 
       <img class="sticker" src="assets/stickers/tv.webp" alt="" style="--x:74%; --y:1%;  --w:230px; --r:5deg" />
-      <img class="sticker" src="assets/stickers/tin_sardine.webp" alt="" style="--x:-3%; --y:92%; --w:190px; --r:-6deg" />
+      <img class="sticker" src="assets/stickers/tin_original.webp" alt="" style="--x:-3%; --y:92%; --w:170px; --r:-6deg" />
       <img class="sticker" src="assets/stickers/fish_pink.webp" alt="" style="--x:80%; --y:94%; --w:190px; --r:-4deg" />
     </section>
 
@@ -165,13 +177,13 @@
           <li class="ticket">
             <div class="ticket__stub"><span>2026</span><span>Jun – Aug</span></div>
             <div class="ticket__body">
-              <h3>SWE &amp; Product Management Intern</h3>
+              <h3>Software Engineering &amp; Product Management Intern</h3>
               <p class="ticket__org">Fuzzy AI · Singapore</p>
               <ul>
-                <li>Owned the feature backlog for an AI platform, prioritizing client feedback with engineers, designers and marketing.</li>
-                <li>Helped launch to <strong>Product Hunt Product of the Day &amp; Week</strong>, partnering on features and SEO/AEO.</li>
-                <li><strong>Doubled</strong> landing-page and in-app CTR with experiments guided by 10+ PostHog dashboards.</li>
-                <li>Demoed live to about 10 prospective and existing clients, then wrote PRDs and shipped what they asked for.</li>
+                <li>Shipped Claude API–powered personalization for <strong>150+ B2B sales teams</strong>, prioritizing features from ~10 live client demos.</li>
+                <li>Improved landing-page CTR by launching TypeScript/React experiments tracked across 12+ PostHog dashboards.</li>
+                <li>Defined new PostHog conversion events after spotting onboarding tracking gaps, exposing a <strong>46% drop-off</strong> at contact import.</li>
+                <li>Built core React features and SEO/AEO edits for a launch that won <strong>Product Hunt Product of the Day &amp; Week</strong>.</li>
               </ul>
             </div>
           </li>
@@ -181,9 +193,10 @@
               <h3>Software Engineer</h3>
               <p class="ticket__org">Dream Team Engineering · Gainesville, FL</p>
               <ul>
-                <li>Designing (Figma) and building a mobile Train of Four monitoring app to replace $10,000+ hardware.</li>
-                <li><strong>90%</strong> TOF-ratio accuracy via micro-twitch motion detection across 400+ clinical videos.</li>
-                <li>Deployed an on-device MediaPipe HandLandmarker on Android at <strong>60 FPS</strong> with runtime CPU/GPU selection.</li>
+                <li>Built an auto-calibrating Python/MediaPipe Train of Four (TOF) twitch counter that measures nerve block from a phone camera.</li>
+                <li>Validated twitch detection with <strong>91%</strong> of TOF ratios within 10 points across 630 Unity-simulated videos from 12 camera angles.</li>
+                <li>Protected patient privacy by running MediaPipe and OpenCV optical flow on-device at <strong>30 FPS</strong> with zero raw video stored.</li>
+                <li>Advancing toward IRB-approved clinical trials by aligning app requirements with UF Health Shands clinicians.</li>
               </ul>
             </div>
           </li>
@@ -193,8 +206,8 @@
               <h3>ML/AI Fellow</h3>
               <p class="ticket__org">Breakthrough Tech × Cornell Tech · Virtual</p>
               <ul>
-                <li>Selected for a competitive one-year fellowship covering everything from EDA to model evaluation.</li>
-                <li>Trained supervised models and built LLM chatbots, RAG pipelines and agentic workflows.</li>
+                <li>Classifying harmful algal bloom risk for biotech startup Biointerphase by modeling water, weather and satellite data.</li>
+                <li>Selected for a competitive <strong>one-year</strong> Cornell Tech ML/AI fellowship spanning EDA, supervised learning and model evaluation.</li>
               </ul>
             </div>
           </li>
@@ -204,9 +217,10 @@
               <h3>Software Engineering Intern</h3>
               <p class="ticket__org">Arthrex · Naples, FL</p>
               <ul>
-                <li>Owned <strong>10+ features</strong> end to end on an ASP.NET Core app used by 2,000+ people.</li>
-                <li>Maintained CI/CD pipelines, PRs and release branching in Azure DevOps and TFS.</li>
-                <li>Designed 4 SQL Server stored procedures that enabled new application features.</li>
+                <li>Shipped <strong>10+ features</strong> to 2,000+ users of a modernized ASP.NET Core (C#/.NET) app as sole developer.</li>
+                <li>Maintained CI/CD pipelines, pull requests and release branching in Azure DevOps and TFS across the release cycle.</li>
+                <li>Enabled new application features by designing 4 SQL stored procedures in SQL Server Management Studio.</li>
+                <li>Coordinated QA through production deployment by translating technical scope and trade-offs for stakeholders.</li>
               </ul>
             </div>
           </li>
@@ -216,8 +230,8 @@
               <h3>B.S. Computer Engineering, Minor in Philosophy</h3>
               <p class="ticket__org">University of Florida · Herbert Wertheim College of Engineering</p>
               <ul>
-                <li>Coursework: Data Structures &amp; Algorithms, Software Engineering, Database Systems, Computer Organization, Microprocessor Applications, Digital Logic.</li>
-                <li>Dean's List (3x) · National Merit Commended · NCWIT Aspirations (3x)</li>
+                <li>Coursework: Data Structures &amp; Algorithms, Intro to Software Engineering, Information &amp; Database Systems, Advanced Programming Fundamentals, Computer Organization, Digital Logic, Microprocessor Applications, Business Analytics &amp; AI.</li>
+                <li>Dean's List (3x) · National Merit Commended Scholar · NCWIT Aspirations in Computing, 3x Regional Affiliate Winner</li>
               </ul>
             </div>
           </li>
@@ -227,18 +241,18 @@
         <ul class="leaders">
           <li class="paper leader">
             <h3>UF Product Space</h3>
-            <p class="ticket__org">Marketing Director · PM Fellow</p>
-            <p>One of 16 PM fellows. Pitched a capstone product analysis to a panel, then grew member engagement by 25% as Marketing Director.</p>
+            <p class="ticket__org">Marketing Director · Product Fellow</p>
+            <p>Selected as 1 of 16 product fellows. As Marketing Director, generated <strong>110K+ views</strong> in 2 months across social channels.</p>
           </li>
           <li class="paper leader">
             <h3>Theta Tau</h3>
             <p class="ticket__org">Web Development Chair</p>
-            <p>Led a 3-person Scrum team that redesigned the chapter website in TypeScript, React and Tailwind.</p>
+            <p>Redesigning a full-stack chapter website in TypeScript, React and Tailwind with a 3-person Scrum team in 2-week sprints.</p>
           </li>
           <li class="paper leader">
             <h3>UF WiCSE</h3>
             <p class="ticket__org">Secretary</p>
-            <p>Drove engagement across 500+ members and coordinated logistics for 30+ events.</p>
+            <p>Drove engagement across 500+ members and coordinated logistics for 30+ events with the registrar and outside organizations.</p>
           </li>
         </ul>
       </div>
@@ -257,8 +271,8 @@
           <h2>Resume</h2>
           <p>The one-page version of everything above.</p>
           <div class="hero__cta">
-            <a class="btn" href="assets/resume.pdf" download="ShreyaRajaram-Resume.pdf">Download PDF</a>
-            <a class="btn btn--ghost" href="assets/resume.pdf" target="_blank" rel="noopener">View in browser</a>
+            <a class="btn" href="assets/resume.pdf?v=2" download="ShreyaRajaram-Resume.pdf">Download PDF</a>
+            <a class="btn btn--ghost" href="assets/resume.pdf?v=2" target="_blank" rel="noopener">View in browser</a>
           </div>
         </div>
       </div>
@@ -273,6 +287,7 @@
       <div class="contact">
         <img class="contact__ace" src="assets/stickers/phone.webp" alt="" />
         <div class="paper contact__card">
+          <img class="sticker contact__patch" src="assets/stickers/patch_callme.webp" alt="" style="--x:calc(100% - 140px); --y:-56px; --w:190px; --r:8deg" />
           <h2>Say hello</h2>
           <p>I'm open to software engineering and product management internships, and to fun collaborations.</p>
           <ul class="contact__links">
@@ -282,15 +297,10 @@
           </ul>
         </div>
       </div>
-      <img class="sticker" src="assets/stickers/patch_callme.webp" alt="" style="--x:68%; --y:10%; --w:210px; --r:6deg" />
-      <img class="sticker" src="assets/stickers/tin_original.webp" alt="" style="--x:2%;  --y:12%; --w:170px; --r:-7deg" />
     </section>
   </main>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> Shreya Rajaram · made with glue sticks &amp; HTML</p>
-  </footer>
 
-  <script src="js/main.js?v=4"></script>
+  <script src="js/main.js?v=5"></script>
 </body>
 </html>

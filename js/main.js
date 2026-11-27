@@ -1,6 +1,3 @@
-// Footer year
-document.getElementById("year").textContent = new Date().getFullYear();
-
 // ---------- Draggable stickers ----------
 // Drag with mouse or touch. Positions aren't saved — refresh to reset.
 let topZ = 40;
